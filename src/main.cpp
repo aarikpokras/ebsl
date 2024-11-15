@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <regex>
-#include "aml.hpp"
+#include "include/aml.hpp"
 #ifndef X
     #warning "aml.hpp not imported correctly"
 #endif
