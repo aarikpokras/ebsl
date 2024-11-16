@@ -1,6 +1,32 @@
 # ebsl
 Equals-based Serialization Language
 
+## Compilation
+### Prep
+<!-- Add info about command usage -->
+You need Meson to build.
+
+Run:
+```console
+pip install meson
+```
+or
+```console
+pip3 install meson
+```
+This should work on most systems.
+
+### Building
+To write the ninja files, run:
+```console
+meson build
+```
+Then
+```console
+cd build && ninja
+```
+The executable should be in that directory.
+
 ## Syntax
 To set a value, use:
 ```
@@ -10,4 +36,3 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
-<!-- Add info about command usage -->
