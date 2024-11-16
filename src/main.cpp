@@ -2,9 +2,6 @@
 #include <fstream>
 #include <regex>
 #include "aml.hpp"
-#ifndef X
-    #warning "aml.hpp not imported correctly"
-#endif
 using namespace std;
 
 int main(int argc, char *argv[]) {
