@@ -10,3 +10,4 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
+<!-- Add info about command usage -->
