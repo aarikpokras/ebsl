@@ -1,13 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <regex>
-#include "include/aml.hpp"
+#include "aml.hpp"
 #ifndef X
     #warning "aml.hpp not imported correctly"
 #endif
 using namespace std;
-// replace
-// str, reg, repl-with
+
 int main(int argc, char *argv[]) {
     regex key("^key=");
     regex fil("^file=");
@@ -27,7 +26,7 @@ int main(int argc, char *argv[]) {
         }
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] != "err") {
-            for (int i = 0; i < out_x.size(); i++) {
+            for (size_t i = 0; i < out_x.size(); i++) {
                 cout << out_x[i] << " ";
             }
         } else {
