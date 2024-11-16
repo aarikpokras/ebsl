@@ -2,9 +2,10 @@ project('ebsl', 'cpp')
 
 inc = include_directories('src/include')
 tar_name = 'ebsl'
+src = ['src/main.cpp', 'src/aml.cpp']
 
 executable(
     tar_name,
-    'src/main.cpp',
+    src,
     include_directories : inc
 )
