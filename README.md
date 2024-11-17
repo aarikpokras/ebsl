@@ -3,10 +3,10 @@ Equals-based Serialization Language
 
 ## Contents
 * [Compilation](#compilation)
-  * Prep
-  * Building
-* Command usage
-* Syntax
+  * [Prep](#prep)
+  * [Building](#building)
+* [Command usage](#command-usage)
+* [Syntax](#syntax)
 
 ## Compilation
 ### Prep
