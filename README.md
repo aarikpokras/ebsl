@@ -8,11 +8,11 @@ You need Meson to build.
 
 Run:
 ```console
-pip install meson
+pip install meson ninja
 ```
 or
 ```console
-pip3 install meson
+pip3 install meson ninja
 ```
 This should work on most systems.
 
