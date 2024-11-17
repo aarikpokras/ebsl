@@ -1,7 +1,7 @@
 # ebsl
 Equals-based Serialization Language
 
-## Contents
+# Contents
 * [Compilation](#compilation)
   * [Prep](#prep)
   * [Building](#building)
