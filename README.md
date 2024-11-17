@@ -1,6 +1,13 @@
 # ebsl
 Equals-based Serialization Language
 
+## Contents
+* [Compilation](#compilation)
+  * Prep
+  * Building
+* Command usage
+* Syntax
+
 ## Compilation
 ### Prep
 <!-- Add info about command usage -->
