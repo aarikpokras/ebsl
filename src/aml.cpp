@@ -2,6 +2,7 @@
 #include <fstream>
 #include <regex>
 #include "aml.hpp"
+#include "fa.hpp"
 using namespace std;
 
 vector<string> gval_aml(string key, string file, size_t amount) {
@@ -14,6 +15,9 @@ vector<string> gval_aml(string key, string file, size_t amount) {
         return vector<string>{"err"};
     }
     while(getline(fileTP, ln)) {
+        if (amount == 0) {
+            amount = find_a(ln);
+        }
         if (regex_search(ln, key_r)) {
             string ret_vp_ = regex_replace(ln, key_r, "");
             for (size_t i = 0; i < amount; i++) {
