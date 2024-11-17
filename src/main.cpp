@@ -18,7 +18,12 @@ int main(int argc, char *argv[]) {
                 fil_ = regex_replace(argv[i], fil, "");
             } else if (regex_search(argv[i], amt)) {
                 string amt__ = regex_replace(argv[i], amt, "");
-                amt_ = stoi(amt__);
+                if (amt__ == "max") {
+                    amt_ = 0;
+                } else {
+                    amt_ = stoi(amt__);
+                }
+                
             }
         }
         vector<string> out_x = gval_aml(key_, fil_, amt_);
