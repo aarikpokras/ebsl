@@ -69,3 +69,7 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
+In order to use the `auto` value for the `amt` argument, the line must end in `,`.
+```
+key=value1,value2,value3,value4,
+```
