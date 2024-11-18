@@ -66,9 +66,9 @@ To get the values of `github`, run the above command, replacing the key and amou
 ```
 Finally, to get all values for a key (e.g. `phone`), run the following:
 ```console
-./ebsl file=conf.ebsl key=phone amt=auto
+./ebsl file=conf.ebsl key=phone amt=max
 ```
-**Notice how in conf.ebsl, the line with `phone` ends in `,`. This is required to use the `auto` option.**
+**Notice how in conf.ebsl, the line with `phone` ends in `,`. This is required to use the `max` option.**
 ## Syntax
 To set a value, use:
 ```
@@ -78,7 +78,7 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
-In order to use the `auto` value for the `amt` argument, the line must end in `,`.
+In order to use the `max` value for the `amt` argument, the line must end in `,`.
 ```
 key=value1,value2,value3,value4,
 ```
