@@ -10,9 +10,7 @@ Equals-based Serialization Language
 
 ## Compilation
 ### Prep
-<!-- Add info about command usage -->
-You need Meson to build.
-
+#### Meson
 Run:
 ```console
 pip install meson ninja
@@ -22,8 +20,8 @@ or
 pip3 install meson ninja
 ```
 This should work on most systems.
-
 ### Building
+#### Meson
 To write the ninja files, run:
 ```console
 meson build
@@ -33,7 +31,16 @@ Then
 cd build && ninja
 ```
 The executable should be in that directory.
-
+#### CMake
+To write the makefiles, run:
+```console
+cmake -Bbuild
+```
+Then
+```console
+cd build && make
+```
+The executable should be in that directory.
 ## Command usage
 |Arg|Purpose|Type|
 |--|--|--|
