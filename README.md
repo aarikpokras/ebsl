@@ -5,7 +5,7 @@ Equals-based Serialization Language
 * [Compilation](#compilation)
   * [Prep](#prep)
   * [Building](#building)
-    * [Meson](#meson)
+    * [Meson](#meson-1)
     * [CMake](#cmake)
 * [Command usage](#command-usage)
 * [Syntax](#syntax)
