@@ -1,4 +1,4 @@
-# ebsl
+# EBSL
 Equals-based Serialization Language
 
 # Contents
