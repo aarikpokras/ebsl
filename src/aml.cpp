@@ -12,7 +12,7 @@ vector<string> gval_aml(string key, string file, size_t amount) {
     vector<string> ret_vec;
     ifstream fileTP(file);
     if (!fileTP.is_open()) {
-        return vector<string>{"err"};
+        return vector<string>(1, "err");
     }
     while(getline(fileTP, ln)) {
         if (amount == 0) {
