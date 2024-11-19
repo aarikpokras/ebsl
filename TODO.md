@@ -1,3 +1,4 @@
-- [ ] Use `string.find` and `string.erase` to get # of all matches in str
+- [x] Use `string.find` and `string.erase` to get # of all matches in str
   - [ ] Get rid of `amount` arg
-- [ ] Make a CMake file
+- [x] Make a CMake file
+- [ ] Parse out extra spaces
