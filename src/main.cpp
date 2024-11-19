@@ -21,11 +21,15 @@ int main(int argc, char *argv[]) {
                 if (amt__ == "max") {
                     amt_ = 0;
                 } else {
-                    amt_ = stoi(amt__);
-                }
-                
-            }
-        }
+                    try {
+                        amt_ = stoi(amt__);
+                    } catch (invalid_argument& err) {
+                        cerr << "Error in " << err.what() << ", is amt an integer?" << endl;
+                        return 1;
+                    } // catch
+                } // else
+            } // amt
+        } // arg checker
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] != "err") {
             for (size_t i = 0; i < out_x.size(); i++) {
