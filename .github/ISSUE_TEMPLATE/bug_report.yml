@@ -12,8 +12,8 @@ body:
    validations:
      required: true
  - type: dropdown
-   multiple: true
    attributes:
+     multiple: true
      options:
        - Compilation with CMake
        - Compilation with Meson
