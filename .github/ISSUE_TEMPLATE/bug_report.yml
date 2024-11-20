@@ -20,9 +20,8 @@ body:
        - Runtime
        - Segmentation fault
        - Abort trap
-       - Other
      label: Step of use
-     description: In what step of use (compilation with CMake, while parsing file, etc.) did the bug occur? Optionally also add the appropriate label to this issue.
+     description: If the step isn't here, please list it in the Bug Summary field.
    validations:
      required: true
  - type: textarea
