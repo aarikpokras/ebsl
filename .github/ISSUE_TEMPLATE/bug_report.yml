@@ -23,6 +23,8 @@ body:
        - Other
      label: Step of use
      description: In what step of use (compilation with CMake, while parsing file, etc.) did the bug occur? Optionally also add the appropriate label to this issue.
+   validations:
+     required: true
  - type: textarea
    attributes:
      label: Steps to reproduce
