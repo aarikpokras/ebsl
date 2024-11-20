@@ -1,4 +1,10 @@
-bug:
-  - '(bug)'
 cmake:
   - '(cmake)'
+meson:
+  - '(meson)'
+windows:
+  - '(windows)'
+darwin:
+  - '(macOS|Darwin)'
+linux:
+  - '(Linux)'
