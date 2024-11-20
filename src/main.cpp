@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     regex amt("^amt=");
     string key_, fil_;
     size_t amt_;
-    if (argc > 1) {
+    if (argc == 4) {
         for (int i = 1; i < argc; i++) {
             if (regex_search(argv[i], key)) {
                 key_ = regex_replace(argv[i], key, "");
