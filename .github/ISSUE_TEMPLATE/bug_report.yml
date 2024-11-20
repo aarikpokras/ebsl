@@ -21,7 +21,7 @@ body:
        - Segmentation fault
        - Abort trap
      label: Step of use
-     description: If the step isn't here, please list it in the Bug Summary field.
+     description: When the error occurred. If the step isn't here, please list it in the Bug Summary field.
    validations:
      required: true
  - type: textarea
