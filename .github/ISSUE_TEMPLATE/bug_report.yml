@@ -1,0 +1,38 @@
+name: Bug report
+description: Report something that went wrong
+title: "[Brief description of bug]"
+labels: bug
+assignees: aarikpokras
+
+body:
+ - type: textarea
+   attributes:
+     label: Bug summary
+     description: Describe what happened
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Step of use
+     description: In what step of use (compilation w/ CMake, after parsing file, etc.) did the bug occur?
+ - type: textarea
+   attributes:
+     label: Steps to reproduce
+     description: Describe how to reproduce the bug.
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Expected behavior
+     description: What was supposed to happen?
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Screenshots
+     description: Are there screenshots that show the bug?
+   validations:
+     required: false
+ - type: markdown
+   attributes:
+     value: Thank you!
