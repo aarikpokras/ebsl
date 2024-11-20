@@ -23,9 +23,7 @@ body:
      options:
        - Compilation with CMake
        - Compilation with Meson
-       - Runtime
-       - Segmentation fault
-       - Abort trap
+       - Runtime (segfault, abort trap)
      label: Step of use
      description: When the error occurred. If the step isn't here, please list it in the Bug Summary field.
    validations:
