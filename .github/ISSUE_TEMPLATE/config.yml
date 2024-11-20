@@ -2,4 +2,7 @@ blank_issues_enabled: true
 contact_links:
   - name: README
     url: https://github.com/aarikpokras/ebsl/blob/master/README.md
-    about: Documentation coming soon
+    about: Some basic information
+  - name: Wiki
+    url: https://github.com/aarikpokras/ebsl/wiki
+    about: More detailed information. In progress.
