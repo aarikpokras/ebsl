@@ -5,6 +5,8 @@ meson:
 windows:
   - '(windows)'
 darwin:
-  - '(macOS|Darwin)'
+  - '(macos|darwin)'
 linux:
-  - '(Linux)'
+  - '(linux)'
+runtime:
+  - '(segmentation fault|abort trap)'
