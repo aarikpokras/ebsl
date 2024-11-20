@@ -11,8 +11,16 @@ body:
      description: Describe what happened
    validations:
      required: true
- - type: textarea
+ - type: dropdown
+   multiple: true
    attributes:
+     options:
+       - Compilation with CMake
+       - Compilation with Meson
+       - Runtime
+       - Segmentation fault
+       - Abort trap
+       - Other
      label: Step of use
      description: In what step of use (compilation with CMake, while parsing file, etc.) did the bug occur? Optionally also add the appropriate label to this issue.
  - type: textarea
