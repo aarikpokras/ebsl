@@ -1,4 +1,5 @@
 - [x] Use `string.find` and `string.erase` to get # of all matches in str
   - [ ] Get rid of `amount` arg
 - [x] Make a CMake file
+- [ ] Custom user-defined delims for CLI ret values
 - [ ] Parse out extra spaces
