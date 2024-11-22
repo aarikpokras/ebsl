@@ -1,12 +1,12 @@
 cmake:
-  - '(cmake)'
+  - '(cmake|CMake)'
 meson:
-  - '(meson)'
+  - '(meson|Meson)'
 windows:
-  - '(windows)'
+  - '(windows|Windows)'
 darwin:
-  - '(macos|darwin)'
+  - '(macos|darwin|macOS|Darwin)'
 linux:
-  - '(linux)'
+  - '(linux|Linux)'
 runtime:
-  - '(segmentation fault|abort trap)'
+  - '(segmentation fault|abort trap|segfault)'
