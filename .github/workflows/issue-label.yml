@@ -15,3 +15,4 @@ jobs:
       with:
         configuration-path: .github/labeler.yml
         enable-versioned-regex: 0
+        repo-token: ${{ secrets.CI_PAT }}
