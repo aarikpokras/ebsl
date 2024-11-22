@@ -22,8 +22,7 @@ body:
      multiple: true
      options:
        - Compilation with CMake
-       - Compilation with Meson
-       - Runtime (segfault, abort trap)
+       - addf
      label: Step of use
      description: When the error occurred. If the step isn't here, please list it in the Bug Summary field.
    validations:
