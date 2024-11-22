@@ -2,3 +2,4 @@
 - [x] Make a CMake file
 - [ ] Custom user-defined delims for CLI ret values
 - [ ] Parse out extra spaces
+- [ ] Read environment variables
