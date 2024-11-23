@@ -2,5 +2,5 @@
 - [x] Make a CMake file
 - [x] Custom user-defined delims for CLI ret values
   - [x] Read environment variables
-- [x] Fix Windows CI workflow
+- [ ] Recognize if `amt=max` key doesn't have `,` at end
 - [ ] Parse out extra spaces
