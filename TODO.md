@@ -2,5 +2,5 @@
 - [x] Make a CMake file
 - [x] Custom user-defined delims for CLI ret values
   - [x] Read environment variables
-- [ ] Recognize if `amt=max` key doesn't have `,` at end
+- [ ] Eradicate if `amt=max` key doesn't have `,` at end rule
 - [ ] Parse out extra spaces
