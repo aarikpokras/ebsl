@@ -1,5 +1,7 @@
 # EBSL
+### [Full documentation](https://github.com/aarikpokras/ebsl/wiki)
 Equals-based Serialization Language
+
 
 # Contents
 * [Compilation](#compilation)
