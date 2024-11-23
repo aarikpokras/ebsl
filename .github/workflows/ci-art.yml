@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Install Meson
-      run: winget install meson
+      run: pip3 install meson ninja
     - uses: actions/checkout@v4
     - name: Write Ninja files
       run: meson build
