@@ -23,7 +23,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: windows
-        path: ebsl
+        path: build/ebsl
 
   dar-art:
     runs-on: macos-latest
@@ -41,7 +41,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: macos
-        path: ebsl
+        path: build/ebsl
 
   ub-art:
     runs-on: ubuntu-latest
@@ -59,4 +59,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: macos
-        path: ebsl
+        path: build/ebsl
