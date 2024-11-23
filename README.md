@@ -84,3 +84,9 @@ In order to use the `max` value for the `amt` argument, the line must end in `,`
 ```
 key=value1,value2,value3,value4,
 ```
+
+Sometimes, you might want to insert comments in your EBSL file, which can be done by writing `//` at the start of each line. Note that if a line starts with `//` the whole line will be seen as a comment, and comments are ignored by the EBSL interpreter. Example:
+```
+// this is a comment
+key=value
+```
