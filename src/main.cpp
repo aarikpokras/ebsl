@@ -5,6 +5,13 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
+    char* delim_ = getenv("EBSL_OUT_DELIM");
+    string delim;
+    if (delim_ != nullptr) {
+        delim = delim_;
+    } else {
+        delim = " ";
+    }
     regex key("^key=");
     regex fil("^file=");
     regex amt("^amt=");
@@ -33,7 +40,7 @@ int main(int argc, char *argv[]) {
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] != "err") {
             for (size_t i = 0; i < out_x.size(); i++) {
-                cout << out_x[i] << " ";
+                cout << out_x[i] << delim;
             }
         } else {
             cout << "An error occurred.";
