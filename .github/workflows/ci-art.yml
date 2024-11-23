@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install Meson
-      run: sudo apt-get install meson ninja
+      run: sudo apt-get install meson ninja-build
     - uses: actions/checkout@v4
     - name: Write Ninja files
       run: meson build
