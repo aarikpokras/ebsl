@@ -56,7 +56,7 @@ File `conf.ebsl`:
 ```
 hello=world
 github=git,website
-phone=samsung,apple,xiaomi,
+phone=samsung,apple,xiaomi
 ```
 To get the value of `hello`, run:
 ```console
@@ -70,17 +70,14 @@ Finally, to get all values for a key (e.g. `phone`), run the following:
 ```console
 ./ebsl file=conf.ebsl key=phone amt=max
 ```
-**Notice how in conf.ebsl, the line with `phone` ends in `,`. This is required to use the `max` option.**
+
 ## Syntax
 To set a value, use:
 ```
 key=value
 ```
 You can also set multiple values for one key, but you need to specify the amount of values you'd like to read:
+
 ```
 key=value1,value2
-```
-In order to use the `max` value for the `amt` argument, the line must end in `,`.
-```
-key=value1,value2,value3,value4,
 ```
