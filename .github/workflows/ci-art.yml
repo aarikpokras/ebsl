@@ -14,11 +14,11 @@ jobs:
       run: winget install meson
     - uses: actions/checkout@v4
     - name: Write Ninja files
-      run: |
-        meson build
-        cd build
+      run: meson build
     - name: Build
-      run: ninja
+      run: |
+        cd build
+        ninja
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
@@ -32,11 +32,11 @@ jobs:
       run: brew install meson ninja
     - uses: actions/checkout@v4
     - name: Write Ninja files
-      run: |
-        meson build
-        cd build
+      run: meson build
     - name: Build
-      run: ninja
+      run: |
+        cd build
+        ninja
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
@@ -50,11 +50,11 @@ jobs:
       run: sudo apt install meson ninja
     - uses: actions/checkout@v4
     - name: Write Ninja files
-      run: |
-        meson build
-        cd build
+      run: meson build
     - name: Build
-      run: ninja
+      run: |
+        cd build
+        ninja
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
