@@ -1,6 +1,6 @@
 - [x] Use `string.find` and `string.erase` to get # of all matches in str
 - [x] Make a CMake file
 - [x] Custom user-defined delims for CLI ret values
+  - [x] Read environment variables
 - [x] Fix Windows CI workflow
 - [ ] Parse out extra spaces
-- [ ] Read environment variables
