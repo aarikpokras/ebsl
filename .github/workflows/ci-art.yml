@@ -10,6 +10,8 @@ jobs:
   win-art:
     runs-on: windows-latest
     steps:
+    - name: Install Meson
+      run: winget install meson
     - uses: actions/checkout@v4
     - name: Write Ninja files
       run: |
@@ -26,6 +28,8 @@ jobs:
   dar-art:
     runs-on: macos-latest
     steps:
+    - name: Install Meson
+      run: pip3 install meson ninja
     - uses: actions/checkout@v4
     - name: Write Ninja files
       run: |
@@ -42,6 +46,8 @@ jobs:
   ub-art:
     runs-on: ubuntu-latest
     steps:
+    - name: Install Meson
+      run: pip3 install meson ninja
     - uses: actions/checkout@v4
     - name: Write Ninja files
       run: |
