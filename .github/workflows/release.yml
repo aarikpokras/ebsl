@@ -5,7 +5,7 @@ on:
       - v*.*.*
 
 jobs:
-  test:
+  create:
     runs-on: ubuntu-latest
     steps:
       - run: |
