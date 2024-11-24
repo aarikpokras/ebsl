@@ -12,9 +12,10 @@ vector<string> gval_aml(string key, string file, size_t amount) {
     vector<string> ret_vec;
     ifstream fileTP(file);
     if (!fileTP.is_open()) {
-        return vector<string>(1, "err");
+        ret_vec.push_back("err");
+        return ret_vec;
     }
-    while(getline(fileTP, ln)) {
+    while(getline(fileTP, ln)) {  // On condition that file is opened, so it is fine to use ret_vec
         if (amount == 0) {
             amount = find_a(ln);
         }
@@ -25,6 +26,12 @@ vector<string> gval_aml(string key, string file, size_t amount) {
                 ret_vec.push_back(ret_vp_.substr(0, ret_find));
                 ret_vp_.erase(0, ret_find+1);
             }
+        } else {
+            ret_vec.push_back("key_err");
+            return ret_vec;  // Return right here is not necessary as the file is already opened.
+                             // This would be bad if the file wasn't opened, hence the immediate
+                             // return in the file-is-open checker. This is here for compatibility
+                             // to be tested in CI later.
         }
     }
     fileTP.close();
