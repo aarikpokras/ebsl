@@ -81,3 +81,9 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
+
+## Testing schedule
+|Time (UTC)|Features|Completed|
+|--|--|--|
+|4:46|Abort trap fixes and new error handling|No|
+
