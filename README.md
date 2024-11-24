@@ -86,5 +86,4 @@ key=value1,value2
 |Date|Features|OS|Completed|
 |--|--|--|--|
 |24/11|Abort trap fixes and new error handling|macOS|Yes|
-|24/11|Abort trap fixes and new error handling|Ubuntu|No|
-|24/11|Abort trap fixes and new error handling|Windows|No|
+|24/11|Abort trap fixes and new error handling iteration 2|macOS|No|
