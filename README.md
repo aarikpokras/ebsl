@@ -50,7 +50,7 @@ The executable should be in that directory.
 |--|--|--|
 |file|File to read from|string|
 |key|The key whose values to get|string|
-|amt|The amount of values to print for the key|integer or auto|
+|amt|The amount of values to print for the key|integer or max|
 
 File `conf.ebsl`:
 ```
