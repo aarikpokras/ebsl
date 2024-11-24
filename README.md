@@ -83,7 +83,8 @@ key=value1,value2
 ```
 
 ## Testing schedule
-|Time (UTC)|Features|Completed|
-|--|--|--|
-|4:46|Abort trap fixes and new error handling|No|
-
+|Date|Features|OS|Completed|
+|--|--|--|--|
+|24/11|Abort trap fixes and new error handling|macOS|Yes|
+|24/11|Abort trap fixes and new error handling|Ubuntu|No|
+|24/11|Abort trap fixes and new error handling|Windows|No|
