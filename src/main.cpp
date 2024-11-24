@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
             cerr << "Error: the specified key " << key_ << " does not exist." << endl;
             return 1;
         } else {
-            for (size_t i = 0; i < out_x.size(); i++) {
+            for (size_t i = 0; i < out_x.size() - 1; i++) {
                 cout << out_x[i] << delim;
             }
         }
