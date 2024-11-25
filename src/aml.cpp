@@ -7,7 +7,7 @@ using namespace std;
 
 vector<string> gval_aml(string key, string file, size_t amount) {
     regex key_r("^" + key + "=");
-    regex sp(" ");
+    regex com("^ .*#");
     string ln;
     vector<string> ret_vec;
     ifstream fileTP(file);
@@ -26,6 +26,8 @@ vector<string> gval_aml(string key, string file, size_t amount) {
                 ret_vec.push_back(ret_vp_.substr(0, ret_find));
                 ret_vp_.erase(0, ret_find+1);
             }
+        } else if (regex_search(ln, com)) {
+            // Do nothing
         } else {
             ret_vec.push_back("key_err");
             return ret_vec;  // Return right here is not necessary as the file is already opened.
