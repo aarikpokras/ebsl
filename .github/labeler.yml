@@ -9,4 +9,4 @@ darwin:
 linux:
   - '(linux|Linux)'
 runtime:
-  - '(segmentation fault|abort trap|segfault)'
+  - '(segmentation fault|abort trap|segfault|runtime)'
