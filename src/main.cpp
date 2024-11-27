@@ -37,6 +37,11 @@ int main(int argc, char *argv[]) {
                 } // else
             } // amt
         } // arg checker
+        if (amt_ == 0) {
+            //
+        } else {
+            amt_++;
+        }
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] == "err") {
             cerr << "Error: the file could not be opened." << endl;
