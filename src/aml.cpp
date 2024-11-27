@@ -28,12 +28,6 @@ vector<string> gval_aml(string key, string file, size_t amount) {
             }
         } else if (regex_search(ln, com)) {
             // Do nothing
-        } else {
-            ret_vec.push_back("key_err");
-            return ret_vec;  // Return right here is not necessary as the file is already opened.
-                             // This would be bad if the file wasn't opened, hence the immediate
-                             // return in the file-is-open checker. This is here for compatibility
-                             // to be tested in CI later.
         }
     }
     fileTP.close();
