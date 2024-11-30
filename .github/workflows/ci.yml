@@ -22,7 +22,7 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: windows
+        name: windows.exe
         path: build/ebsl.exe
 
   dar-art:
