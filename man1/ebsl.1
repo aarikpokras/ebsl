@@ -1,0 +1,31 @@
+.TH EBSL 1 "2024-11-27" "1.0" "EBSL Man Page"
+.SH NAME
+EBSL \- Equals-based Serialization Language
+.SH SYNOPSIS
+\fBebsl\fR file=[file] key=[key] amt=[amount | max]
+.SH OPTIONS
+
+.TP
+\fBfile\fR=\fIfile\fR
+Set the file to read from
+.TP
+\fBkey\fR=\fIkey\fR
+Set the key whose values to get
+.TP
+\fBamt\fR=\fIamount\fR
+Set the amount of values to read. This can be an integer or "max".
+
+.SH EXAMPLES
+
+To get all values of the key "color" from the file rainbow.ebsl:
+.br
+ebsl file=rainbow.ebsl key=color amt=max
+.sp
+To get the first three values of the key "color" from the file rainbow.ebsl:
+.br
+ebsl file=rainbow.ebsl key=color amt=3
+
+.SH BUGS
+If you find a bug, please contact \fIme@aarikpokras.com\fR or submit an issue on the GitHub page.
+.SH SEE ALSO
+\fIREGEX\fR(3), \fISTRING\fR(3)
