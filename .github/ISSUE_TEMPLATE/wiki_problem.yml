@@ -32,4 +32,4 @@ body:
      label: If you selected other, please specify.
  - type: markdown
    attributes:
-     value: \### Thank you!
+     value: Thank you!
