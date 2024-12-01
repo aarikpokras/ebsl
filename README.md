@@ -2,9 +2,10 @@
 
 # <img src='https://github.com/aarikpokras/ebsl/blob/master/images/ebsl-long.png?raw=true' width="400" />
 
+![Stage](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faarikpokras%2Febsl%2Frefs%2Fheads%2Fmaster%2Fshields.json&query=%24.stage&style=for-the-badge&label=stage&color=default)
+
 </div>
 
-![Stage](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faarikpokras%2Febsl%2Frefs%2Fheads%2Fmaster%2Fshields.json&query=%24.stage&style=for-the-badge&label=stage&color=default)
 ### [Full documentation](https://github.com/aarikpokras/ebsl/wiki)
 Equals-based Serialization Language
 
