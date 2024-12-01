@@ -7,11 +7,12 @@ size_t find_a(string str) {
     size_t amt = 0;
     while (str.length() != 0) {
         size_t index = str.find(",");
-        amt++;
-        str.erase(0, index+1);
-        if (index == string::npos) {
+        if (index > str.size()) {
             amt++;
-            return amt;
+            str.erase(0, str.size());
+        } else {
+            amt++;
+            str.erase(0, index+1);
         }
     }
     return amt;
