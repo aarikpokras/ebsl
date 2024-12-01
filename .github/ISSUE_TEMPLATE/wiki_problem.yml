@@ -1,0 +1,35 @@
+name: Documentation Problem
+description: Report a problem in the wiki
+title: "[Brief description of problem]"
+labels: docs
+assignees: aarikpokras
+
+body:
+ - type: input
+   attributes:
+     label: Path
+     description: The page the problem is on (e.g. /CLI#parsing-files)
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Context
+     description: Copy and paste the problem and the text surrounding it.
+   validations:
+     required: true
+ - type: dropdown
+   attributes:
+     multiple: false
+     label: What's the problem?
+     description: What happened?
+     options:
+       - Typo
+       - Other (please specify)
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: If you selected other, please specify.
+ - type: markdown
+   attributes:
+     value: Thank you!
