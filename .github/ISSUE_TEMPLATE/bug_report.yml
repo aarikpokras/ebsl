@@ -25,7 +25,7 @@ body:
      required: true
  - type: dropdown
    attributes:
-     multiple: true
+     multiple: false
      options:
        - Compilation with CMake
        - Compilation with Meson
