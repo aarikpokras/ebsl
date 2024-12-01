@@ -81,9 +81,3 @@ You can also set multiple values for one key, but you need to specify the amount
 ```
 key=value1,value2
 ```
-
-## Testing schedule
-|Date|Features|OS|Completed|
-|--|--|--|--|
-|24/11|Abort trap fixes and new error handling|macOS|Yes|
-|24/11|Abort trap fixes and new error handling iteration 2|macOS|No|
