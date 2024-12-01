@@ -37,11 +37,6 @@ int main(int argc, char *argv[]) {
                 } // else
             } // amt
         } // arg checker
-        if (amt_ == 0) {
-            //
-        } else {
-            amt_++;
-        }
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] == "err") {
             cerr << "Error: the file could not be opened." << endl;
@@ -50,7 +45,7 @@ int main(int argc, char *argv[]) {
             cerr << "Error: the specified key " << key_ << " does not exist." << endl;
             return 1;
         } else {
-            for (size_t i = 0; i < out_x.size() - 1; i++) {
+            for (size_t i = 0; i < out_x.size(); i++) {
                 cout << out_x[i] << delim;
             }
         }
