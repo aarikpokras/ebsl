@@ -8,7 +8,7 @@ body:
  - type: input
    attributes:
      label: Path
-     description: The page the problem is on (e.g. /CLI#parsing-files)
+     description: The page the problem is on (e.g. `/CLI#parsing-files`)
    validations:
      required: true
  - type: textarea
