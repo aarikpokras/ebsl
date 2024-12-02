@@ -6,5 +6,5 @@
 - [ ] Parse out extra spaces
   - [x] In values
   - [ ] In keys
-- [ ] Change return codes for different cases
+- [x] Change return codes for different cases
 - [ ] Add feature request form
