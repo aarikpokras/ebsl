@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
                         amt_ = stoi(amt__);
                     } catch (invalid_argument& err) {
                         cerr << "Error in " << err.what() << ", is amt an integer?" << endl;
-                        return 1;
+                        return 4;
                     } // catch
                 } // else
             } // amt
@@ -40,10 +40,10 @@ int main(int argc, char *argv[]) {
         vector<string> out_x = gval_aml(key_, fil_, amt_);
         if (out_x[0] == "err") {
             cerr << "Error: the file could not be opened." << endl;
-            return 1;
+            return 2;
         } else if (out_x[0] == "key_err") {
             cerr << "Error: the specified key " << key_ << " does not exist." << endl;
-            return 1;
+            return 2;
         } else {
             for (size_t i = 0; i < out_x.size(); i++) {
                 cout << out_x[i] << delim;
