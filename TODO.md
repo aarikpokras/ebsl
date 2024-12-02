@@ -8,3 +8,4 @@
 - [ ] Parse out extra spaces
   - [x] In values
   - [ ] In keys
+- [ ] Remove trailing space (or out delim) after last item
