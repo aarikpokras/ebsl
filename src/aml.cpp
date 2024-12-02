@@ -29,6 +29,9 @@ vector<string> gval_aml(string key, string file, size_t amount) {
                 } else {
                     ret_vec.push_back(ret_vp_);
                 }
+                if (ret_vp_[0] == ' ') {
+                    ret_vp_.erase(0, 1);
+                }
             }
         }
     }
