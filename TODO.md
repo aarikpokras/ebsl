@@ -3,6 +3,8 @@
 - [x] Custom user-defined delims for CLI ret values
   - [x] Read environment variables
 - [x] Eradicate if `amt=max` key doesn't have `,` at end rule
+- [ ] Parse out extra spaces
+  - [x] In values
+  - [ ] In keys
 - [ ] Change return codes for different cases
 - [ ] Add feature request form
-- [ ] Parse out extra spaces
