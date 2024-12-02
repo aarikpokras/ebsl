@@ -6,6 +6,9 @@
 
 </div>
 
+![CI Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/ebsl/ci.yml?style=flat-square)
+![Code size](https://img.shields.io/github/languages/code-size/aarikpokras/ebsl?style=flat-square)
+
 ### [Full documentation](https://github.com/aarikpokras/ebsl/wiki)
 Equals-based Serialization Language
 
