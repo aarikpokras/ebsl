@@ -1,0 +1,22 @@
+name: Feature request
+description: A feature you'd like added to EBSL
+title: "[Brief description of feature]"
+labels: enhancement
+assignees: aarikpokras
+
+body:
+ - type: textarea
+   attributes:
+     label: Feature summary
+     description: Describe what you'd like added to EBSL.
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Why it's useful
+     description: Describe why it would be useful.
+   validations:
+     required: true
+ - type: markdown
+   attributes:
+     value: Thank you!
