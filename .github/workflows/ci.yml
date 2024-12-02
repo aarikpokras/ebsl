@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
     paths:
       - "src/**"
+      - ".github/workflows/**"
       - "meson.build"
       - "CMakeLists.txt"
   pull_request:
