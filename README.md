@@ -14,7 +14,7 @@ Equals-based Serialization Language
 
 
 # Contents
-* What's next
+* [What's next](#whats-next)
 * [Compilation](#compilation)
   * [Prep](#prep)
   * [Building](#building)
