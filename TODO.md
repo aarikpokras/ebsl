@@ -9,6 +9,7 @@
   - [x] In values
   - [ ] In keys
 - [ ] Remove trailing space (or out delim) after last item
+- [ ] Fix `key_err` by putting found bool out of read scope
 - [ ] Install script/Add to PATH
 - [ ] Config file for certain settings?
 - [ ] Keep file, etc. in env for easy running?
