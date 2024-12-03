@@ -14,7 +14,6 @@ Equals-based Serialization Language
 
 
 # Contents
-* [What's next](#whats-next)
 * [Compilation](#compilation)
   * [Prep](#prep)
   * [Building](#building)
@@ -23,9 +22,10 @@ Equals-based Serialization Language
 * [Command usage](#command-usage)
 * [Syntax](#syntax)
 
-## What's next?
-* Will fix how out delim prints after all values
-* Will fix abort trap when key doesn't exist
+<details>
+<summary>What's next?</summary>
+Check TODO.md
+</details>
 
 ## Compilation
 ### Prep
