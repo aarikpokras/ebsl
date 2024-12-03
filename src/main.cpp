@@ -41,6 +41,9 @@ int main(int argc, char *argv[]) {
         if (out_x[0] == "err") {
             cerr << "Error: the file could not be opened." << endl;
             return 2;
+        } else if (out_x[0] == "key_err") {
+            cerr << "Error: the specified key " << key_ << " does not exist." << endl;
+            return 2;
         } else {
             string out;
             for (size_t i = 0; i < out_x.size(); i++) {
