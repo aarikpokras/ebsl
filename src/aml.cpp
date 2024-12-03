@@ -15,6 +15,7 @@ vector<string> gval_aml(string key, string file, size_t amount) {
         ret_vec.push_back("err");
         return ret_vec;
     }
+    bool found = false;
     while(getline(fileTP, ln)) {  // On condition that file is opened, so it is fine to use ret_vec
         if (regex_search(ln, key_r)) {
             if (amount == 0) {
@@ -25,7 +26,7 @@ vector<string> gval_aml(string key, string file, size_t amount) {
                 size_t ret_find = ret_vp_.find(",");
                 if (ret_find <= ret_vp_.size()) {
                     ret_vec.push_back(ret_vp_.substr(0, ret_find));
-                    ret_vp_.erase(0, ret_find+1);                    
+                    ret_vp_.erase(0, ret_find+1);
                 } else {
                     ret_vec.push_back(ret_vp_);
                 }
@@ -33,7 +34,12 @@ vector<string> gval_aml(string key, string file, size_t amount) {
                     ret_vp_.erase(0, 1);
                 }
             }
+        found = true;
         }
+    }
+    if (!found) {
+        ret_vec.push_back("key_err");
+        return ret_vec;
     }
     fileTP.close();
     return ret_vec;
