@@ -1,2 +1,6 @@
 [shields]
 stage = "development (stable)"
+# dev   #b60104
+# dev s #016b75
+# test  #fbca01
+# rel   default
