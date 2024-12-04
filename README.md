@@ -26,6 +26,7 @@ Equals-based Serialization Language
 <summary>What's next?</summary>
 
 * Config file
+* Installation script
 </details>
 
 ## Compilation
