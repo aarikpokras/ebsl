@@ -24,7 +24,8 @@ Equals-based Serialization Language
 
 <details>
 <summary>What's next?</summary>
-Check TODO.md
+
+* Config file
 </details>
 
 ## Compilation
