@@ -17,6 +17,8 @@ Equals-based Serialization Language
 * [Compilation](#compilation)
   * [Prep](#prep)
   * [Building](#building)
+    * [AUR](#AUR)
+    * [Installation script](#installation-script)
     * [Meson](#meson-1)
     * [CMake](#cmake)
 * [Command usage](#command-usage)
