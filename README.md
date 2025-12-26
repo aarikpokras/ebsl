@@ -42,6 +42,24 @@ pip3 install meson ninja
 ```
 This should work on most systems.
 ### Building
+#### AUR
+EBSL is available on the AUR:
+
+With yay:
+```console
+yay -S ebsl
+```
+
+With paru:
+```console
+paru -S ebsl
+```
+
+Or manually:
+```console
+git clone https://aur.archlinux.org/ebsl.git && cd ebsl && makepkg -si
+```
+
 #### Meson
 To write the ninja files, run:
 ```console
