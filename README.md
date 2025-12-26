@@ -60,6 +60,14 @@ Or manually:
 git clone https://aur.archlinux.org/ebsl.git && cd ebsl && makepkg -si
 ```
 
+#### Installation script
+Simply run:
+```console
+sh install.sh [privilege escalation tool - optional if sudo]
+```
+
+If you use sudo, there is no need for any argument to install.sh
+
 #### Meson
 To write the ninja files, run:
 ```console
