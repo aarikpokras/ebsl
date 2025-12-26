@@ -1,7 +1,7 @@
 # Maintainer: Aarik Pokras <me@aarikpokras.com>
 pkgname=ebsl
 pkgver=2.6.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Equals-based Serialization Language"
 arch=('any')
 url="https://github.com/aarikpokras/ebsl"
@@ -15,4 +15,7 @@ package() {
         cd build
         make
         install -Dm755 ebsl "$pkgdir/usr/bin/ebsl"
+        cd ..
+        gzip man1/ebsl.1
+        install -Dm644 man1/ebsl.1.gz "$pkgdir/usr/share/man/man1/ebsl.1.gz"
 }
