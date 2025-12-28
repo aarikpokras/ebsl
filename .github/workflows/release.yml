@@ -9,8 +9,10 @@ jobs:
   create:
     runs-on: ubuntu-latest
     steps:
-      - name: Make release
+      - name: Check out
         uses: actions/checkout@v4
+
+      - name: Create release
         env:
           GH_TOKEN: ${{ secrets.CI_PAT }}
       - run: |
