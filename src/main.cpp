@@ -44,13 +44,14 @@ int main(int argc, char *argv[]) {
         } else if (out_x[0] == "key_err") {
             cerr << "Error: the specified key " << key_ << " does not exist." << endl;
             return 2;
-        } else {
-            string out;
+        } else { // gval_aml successful
+            string out; // out is a string so fun stuff can be done to it
             for (size_t i = 0; i < out_x.size(); i++) {
-                out += out_x[i];
+                out += out_x[i]; // man it's 1 am what the hell am i doing
                 out += delim;
             }
             out.erase(out.size()-1, out.size());  // Trim off the trailing out delim
+            if (out[0] == ' ') out.erase(0, 1);
             cout << out << endl;
         }
     } else {
