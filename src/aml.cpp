@@ -6,7 +6,8 @@
 using namespace std;
 
 vector<string> gval_aml(string key, string file, size_t amount) {
-    regex key_r("^" + key + "=");
+    regex key_r("^" + key + "="); // key=xx
+    regex key_rDA("^" + key + " ="); // key =xx (" = " doesn't need special handling - spaces @[0] are removed)
     regex com("^ .*#");
     string ln;
     vector<string> ret_vec;
@@ -17,11 +18,12 @@ vector<string> gval_aml(string key, string file, size_t amount) {
     }
     bool found = false;
     while(getline(fileTP, ln)) {  // On condition that file is opened, so it is fine to use ret_vec
-        if (regex_search(ln, key_r)) {
+        if (regex_search(ln, key_r) || regex_search(ln, key_rDA)) {
             if (amount == 0) {
                 amount = find_a(ln);
             }
             string ret_vp_ = regex_replace(ln, key_r, "");
+                   ret_vp_ = regex_replace(ret_vp_, key_rDA, ""); // pls work -- works :)
             for (size_t i = 0; i < amount; i++) {
                 size_t ret_find = ret_vp_.find(",");
                 if (ret_find <= ret_vp_.size()) {
