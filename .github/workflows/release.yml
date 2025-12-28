@@ -16,4 +16,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.CI_PAT }}
         run: |
+          export GH_TOKEN=${{ secrets.CI_PAT }}
           gh release create ${{ github.ref_name }} -t "EBSL ${{ github.ref_name }}" -R aarikpokras/ebsl -F inter-changelog.md
