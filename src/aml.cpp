@@ -5,7 +5,7 @@
 #include "fa.hpp"
 using namespace std;
 
-vector<string> gval_aml(string key, string file, size_t amount) {
+vector<string> gval_aml(string key, string file, size_t amount, string indelim) {
     regex key_r("^" + key + "="); // key=xx
     regex key_rDA("^" + key + " ="); // key =xx (" = " doesn't need special handling - spaces @[0] are removed)
     regex com("^ .*#");
@@ -20,20 +20,24 @@ vector<string> gval_aml(string key, string file, size_t amount) {
     while(getline(fileTP, ln)) {  // On condition that file is opened, so it is fine to use ret_vec
         if (regex_search(ln, key_r) || regex_search(ln, key_rDA)) {
             if (amount == 0) {
-                amount = find_a(ln);
+                amount = find_a(ln, indelim);
             }
             string ret_vp_ = regex_replace(ln, key_r, "");
                    ret_vp_ = regex_replace(ret_vp_, key_rDA, ""); // pls work -- works :)
             for (size_t i = 0; i < amount; i++) {
-                size_t ret_find = ret_vp_.find(",");
-                if (ret_find <= ret_vp_.size()) {
+                size_t ret_find = ret_vp_.find(indelim); // find arg was ","
+                if (ret_find != string::npos) { // was <= ret_vp_.size()
                     ret_vec.push_back(ret_vp_.substr(0, ret_find));
-                    ret_vp_.erase(0, ret_find+1);
+                    ret_vp_.erase(0, ret_find+indelim.length());
                 } else {
                     ret_vec.push_back(ret_vp_);
+                    break;
                 }
-                if (ret_vp_[0] == ' ') {
+                if (!ret_vp_.empty() && ret_vp_[0] == ' ') {
                     ret_vp_.erase(0, 1);
+                }
+                if (!ret_vp_.empty() && ret_vp_.back() == ' ') {
+                    ret_vp_.pop_back();
                 }
             }
         found = true;
