@@ -5,11 +5,10 @@
 - [x] Eradicate if `amt=max` key doesn't have `,` at end rule
 - [x] Change return codes for different cases
 - [x] Add feature request form
-- [ ] Parse out extra spaces
+- [x] Parse out extra spaces
   - [x] In values
-  - [ ] In keys
+  - [x] In keys
 - [x] Remove trailing space (or out delim) after last item
 - [x] Fix `key_err` by putting found bool out of read scope
-- [ ] Install script/Add to PATH
-- [ ] Config file for certain settings?
+- [x] Install script/Add to PATH
 - [ ] Keep file, etc. in env for easy running?
