@@ -3,10 +3,10 @@
 #include "fa.hpp"
 using namespace std;
 
-size_t find_a(string str) {
+size_t find_a(string str, string ind) {
     size_t amt = 0;
     while (str.length() != 0) {
-        size_t index = str.find(",");
+        size_t index = str.find(ind);
         if (index > str.size()) {
             amt++;
             str.erase(0, str.size());
