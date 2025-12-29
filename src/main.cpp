@@ -15,14 +15,18 @@ int main(int argc, char *argv[]) {
     regex key("^key=");
     regex fil("^file=");
     regex amt("^amt=");
+    regex ind("^ind=");
+    string ind_ = ",";
     string key_, fil_;
     size_t amt_;
-    if (argc == 4) {
+    if (argc >= 4) { // was argc == 4
         for (int i = 1; i < argc; i++) {
             if (regex_search(argv[i], key)) {
                 key_ = regex_replace(argv[i], key, "");
             } else if (regex_search(argv[i], fil)) {
                 fil_ = regex_replace(argv[i], fil, "");
+            } else if (regex_search(argv[i], ind)) {
+                ind_ = regex_replace(argv[i], ind, "");
             } else if (regex_search(argv[i], amt)) {
                 string amt__ = regex_replace(argv[i], amt, "");
                 if (amt__ == "max") {
@@ -37,7 +41,7 @@ int main(int argc, char *argv[]) {
                 } // else
             } // amt
         } // arg checker
-        vector<string> out_x = gval_aml(key_, fil_, amt_);
+        vector<string> out_x = gval_aml(key_, fil_, amt_, ind_);
         if (out_x[0] == "err") {
             cerr << "Error: the file could not be opened." << endl;
             return 2;
