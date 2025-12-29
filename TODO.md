@@ -11,4 +11,5 @@
 - [x] Remove trailing space (or out delim) after last item
 - [x] Fix `key_err` by putting found bool out of read scope
 - [x] Install script/Add to PATH
+- [ ] CI built-in testing!
 - [ ] Keep file, etc. in env for easy running?
